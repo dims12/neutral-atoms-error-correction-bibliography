@@ -9,6 +9,13 @@ Microsoft). Each entry gives authors, venue, citation count, a source link, and 
 > the arXiv abstract page where available, otherwise to the publisher DOI. A few publisher abstracts
 > are elided (paywalled) and are flagged accordingly with a brief editorial summary.
 > Related: see [`Magne-quantum-computer.md`](./Magne-quantum-computer.md) for the machine overview.
+>
+> **Title verification (2026-06-22):** All titles were checked against their live sources — arXiv
+> abstract pages for preprints, and the Crossref API for journal-only entries — not taken on trust
+> from Semantic Scholar. One paper has an arXiv-vs-journal title divergence and is flagged inline
+> (see §1, the *Nature 2025* Bluvstein et al. entry). **Abstracts** are quoted from Semantic Scholar /
+> arXiv preprint metadata and may differ slightly from the final published versions; where a published
+> abstract was paywalled it is flagged with an editorial summary instead.
 
 ---
 
@@ -41,24 +48,30 @@ Microsoft). Each entry gives authors, venue, citation count, a source link, and 
 *Bluvstein, Geim, Li, Evered, … Cain, Lukin* — **Nature (2025)** · ~113 citations
 [arXiv:2506.20661](https://arxiv.org/abs/2506.20661) · [DOI 10.1038/s41586-025-09848-5](https://doi.org/10.1038/s41586-025-09848-5)
 
-> Quantum error correction (QEC) is essential for the realization of large-scale quantum computers.
-> However, owing to the complexity of operating on the encoded 'logical' qubits, understanding the
-> physical principles for building fault-tolerant quantum devices and combining them into efficient
-> architectures is an outstanding scientific challenge. Here we use reconfigurable arrays of up to 448
-> neutral atoms to implement the key elements of a universal, fault-tolerant quantum processing
-> architecture and experimentally explore their underlying working mechanisms. We first use surface
-> codes to study how repeated QEC suppresses errors, demonstrating 2.14(13)× below-threshold
-> performance in a four-round characterization circuit by leveraging atom loss detection and machine
-> learning decoding. We then investigate logical entanglement using transversal gates and lattice
-> surgery and extend it to universal logic through transversal teleportation with three-dimensional
-> [[15,1,3]] codes, enabling arbitrary-angle synthesis with polylogarithmic overhead. Finally, we
-> develop mid-circuit qubit reuse, increasing experimental cycle rates by two orders of magnitude and
+> ⚠️ **Title note:** the heading above is the **published Nature title**. The **arXiv preprint
+> (2506.20661) carries a different title**: *"Architectural mechanisms of a universal fault-tolerant
+> quantum computer"* — same authors and paper. The abstract below is the current arXiv (preprint)
+> version, verbatim.
+
+> Quantum error correction (QEC) is believed to be essential for the realization of large-scale
+> quantum computers. However, due to the complexity of operating on the encoded 'logical' qubits,
+> understanding the physical principles for building fault-tolerant quantum devices and combining them
+> into efficient architectures is an outstanding scientific challenge. Here we utilize reconfigurable
+> arrays of up to 448 neutral atoms to implement all key elements of a universal, fault-tolerant
+> quantum processing architecture and experimentally explore their underlying working mechanisms. We
+> first employ surface codes to study how repeated QEC suppresses errors, demonstrating 2.14(13)x
+> below-threshold performance in a four-round characterization circuit by leveraging atom loss
+> detection and machine learning decoding. We then investigate logical entanglement using transversal
+> gates and lattice surgery, and extend it to universal logic through transversal teleportation with
+> 3D [[15,1,3]] codes, enabling arbitrary-angle synthesis with logarithmic overhead. Finally, we
+> develop mid-circuit qubit re-use, increasing experimental cycle rates by two orders of magnitude and
 > enabling deep-circuit protocols with dozens of logical qubits and hundreds of logical teleportations
 > with [[7,1,3]] and high-rate [[16,6,4]] codes while maintaining constant internal entropy. Our
-> experiments show key principles for efficient architecture design, involving the interplay between
+> experiments reveal key principles for efficient architecture design, involving the interplay between
 > quantum logic and entropy removal, judiciously using physical entanglement in logic gates and magic
 > state generation, and leveraging teleportations for universality and physical qubit reset. These
-> results establish foundations for scalable, universal error-corrected processing.
+> results establish foundations for scalable, universal error-corrected processing and its practical
+> implementation with neutral atom systems.
 
 ### Fault-tolerant quantum computation with a neutral atom processor ⭐ *(Magne demonstrator)*
 *Reichardt, Paetznick, Aasen, … Bloom (Microsoft + Atom Computing)* — **2024** · ~48 citations
@@ -229,7 +242,7 @@ with **Microsoft** (Azure software, error correction, decoding). The technical p
 > as building blocks in a first step of error correction in order to push the effective error rates
 > below the threshold of a fully fault-tolerant and scalable quantum error correction scheme.
 
-### Coniq: Enabling Concatenated Quantum Error Correction on Neutral Atom Arrays
+### ConiQ: Enabling Concatenated Quantum Error Correction on Neutral Atom Arrays
 *Liu, Xu, Zhou, Wang, Acar, Shi* — **IEEE QCE (2025)** · ~3 citations
 [arXiv:2508.05779](https://arxiv.org/abs/2508.05779)
 
@@ -327,7 +340,7 @@ with **Microsoft** (Azure software, error correction, decoding). The technical p
 > interactions to multiple atomic species has emerged as a promising route to achieving this latter
 > requirement.
 
-### Computational capabilities and compiler development for neutral atom quantum processors
+### Computational Capabilities and Compiler Development for Neutral Atom Quantum Processors: Connecting Tool Developers and Hardware Experts
 *Schmid, Locher, Rispler, Blatt, Zeiher, Müller, Wille* — **Review, Quantum Sci. Technol. (2023)** · ~44 citations
 [arXiv:2309.08656](https://arxiv.org/abs/2309.08656) · [DOI 10.1088/2058-9565/ad33ac](https://doi.org/10.1088/2058-9565/ad33ac)
 
@@ -361,7 +374,7 @@ with **Microsoft** (Azure software, error correction, decoding). The technical p
 > also outlining persistent challenges towards scalable FTQC. The experimental databases and analysis
 > code underpinning this review are publicly available.
 
-### Neutral atom quantum computers for applications in condensed matter physics
+### Neutral atom quantum computers for the applications in condensed matter physics
 *Shweta, Kaur, Singh, Kanjilal, Santra* — **Review, J. Phys.: Condens. Matter (2025)** · ~1 citation
 [DOI 10.1088/1361-648X/adbb9b](https://doi.org/10.1088/1361-648X/adbb9b)
 
